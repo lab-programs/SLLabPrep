@@ -35,7 +35,8 @@
     <input type="radio" name="gender" id="male" checked onchange="displayGender()">Male<br>
     <input type="radio" name="gender" id="female" onchange="displayGender()">Female<br>
     <br>Feedback:<br>
-    <textarea name="feedback" id="feedback" placeholder="Enter your valuable feedback here..." onchange="displayFeedback()"></textarea>
+    <textarea name="feedback" id="feedback" placeholder="Enter your valuable feedback here..." 
+              onchange="displayFeedback()"></textarea>
 
     <h3>Details</h3>
     <p id='dname'>

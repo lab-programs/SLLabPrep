@@ -287,3 +287,45 @@ function convertInrToEuro() {
     }
 }
 ```
+
+## Program 3.B
+
+```html
+<!DOCTYPE html>
+
+<head>
+    <title>Iyengar Bakery</title>
+    <script>
+        function onPurchase() {
+            var caq = document.getElementById('caq').value;
+            var coq = document.getElementById('coq').value;
+            if (!caq || caq < 0) {
+                caq = 0;
+            }
+            if (!coq || coq < 0) {
+                coq = 0;
+            }
+            console.log(caq)
+            console.log(coq)
+            console.log(typeof(coq))
+            var billAmt = 4 * caq + 1 * coq;
+            alert("Bill amount: $" + billAmt + '.00')
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Iyengar Bakery</h2>
+    <h4>Bakery Menu</h4>
+
+    Cake: ($4.00 for 1)
+    <br>Quantity: <input type="number" id="caq" placeholder=0>
+
+    <br><br>Cookie: ($1.00 for 1)
+    <br>Quantity: <input type="number" id="coq" placeholder=0>
+    <br><br>
+    <button type="button" id="purchase" onclick="onPurchase()">Purchase</button>
+</body>
+
+</html>
+```
